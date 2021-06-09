@@ -30,7 +30,7 @@ echo '============ installing curl ============'
 apt-get -y install curl
 
 echo '============ doing a curl ============'
-curl http://localhost:3000
+curl http://0.0.0.0:3000
 
 echo 'Now...'
 echo 'Visit http://localhost:3000 to see your Node.js/React application in action.'
