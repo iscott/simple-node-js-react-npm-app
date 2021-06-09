@@ -26,6 +26,9 @@ sleep 1
 echo $! > .pidfile
 set +x
 
+echo '============ installing curl ============'
+apt-get install curl -y
+
 echo '============ doing a curl ============'
 curl http://localhost:3000
 
