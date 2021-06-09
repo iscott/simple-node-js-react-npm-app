@@ -23,7 +23,7 @@ echo 'the file ".pidfile".'
 # set -x
 # npm install -g serve
 npm start &
-sleep 1
+sleep 60
 echo $! > .pidfile
 # set +x
 
