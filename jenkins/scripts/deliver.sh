@@ -9,6 +9,9 @@ set -x
 npm run build
 set +x
 
+echo '============ doing a pwd ============'
+pwd
+
 echo 'The following "npm" command runs your Node.js/React application in'
 echo 'development mode and makes the application available for web browsing.'
 echo 'The "npm start" command has a trailing ampersand so that the command runs'
@@ -23,7 +26,10 @@ sleep 1
 echo $! > .pidfile
 set +x
 
+echo '============ doing a curl ============'
+curl http://localhost:3000
+
 echo 'Now...'
-echo 'Visit http://localhost:3000 to see your Node.js/React application in action.'
-echo '(This is why you specified the "args ''-p 3000:3000''" parameter when you'
+echo 'Visit http://localhost:5000 to see your Node.js/React application in action.'
+echo '(This is why you specified the "args ''-p 5000:5000''" parameter when you'
 echo 'created your initial Pipeline as a Jenkinsfile.)'
